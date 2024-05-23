@@ -1,0 +1,29 @@
+{
+  "name": "Super Search",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "improve your search",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": ["storage"],
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "encoding": "UTF-8",
+      "favicon_url": "image/favicon.ico",
+      "is_default": true,
+      "keyword": "Search",
+      "name": "Super Search",
+      "search_url": "https://search.yahoo.com/search?q={searchTerms}"
+    }
+  },
+  "omnios": { "keyword": "Super" },
+  "action": {
+    "default_title": "Super Search",
+
+    "default_icon": {
+      "32": "image/favicon.ico"
+    },
+    "default_popup": "popup.html"
+  }
+}
